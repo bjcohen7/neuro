@@ -1,134 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-  <!-- GitHub Pages SPA routing -->
-  <script>
-    (function(){
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect !== location.href) {
-        history.replaceState(null, null, redirect);
-      }
-      // Also handle ?p= redirect from 404.html
-      var p = new URLSearchParams(location.search).get('p');
-      if (p) {
-        var newUrl = '/' + p + (new URLSearchParams(location.search).get('q') ? '?' + new URLSearchParams(location.search).get('q') : '') + location.hash;
-        history.replaceState(null, null, newUrl);
-      }
-    })();
-  </script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
-    <!-- Primary SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyNeuroTest — Discover Your Neurodivergent Profile | Free Assessment</title>
     <meta name="description" content="Take MyNeuroTest's free evidence-informed assessment and unlock a personalized neurodivergent cognitive profile. Understand your unique mind across ADHD, autism, sensory processing, and more. No diagnosis needed." />
-    <meta name="keywords" content="neurodivergent quiz, ADHD test, autism self-assessment, cognitive profile, neurodiversity, free neurodivergent test, sensory processing, neurodivergence spectrum, MyNeuroTest" />
-    <meta name="author" content="MyNeuroTest" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://myneurotest.com/" />
-
-    <!-- Open Graph / Facebook -->
+    <meta name="keywords" content="neurodivergent test, ADHD assessment, autism quiz, sensory processing, cognitive profile, neurodiversity" />
+    <meta property="og:title" content="MyNeuroTest — Discover Your Neurodivergent Profile" />
+    <meta property="og:description" content="Free evidence-informed assessment. Understand your unique cognitive profile across 7 dimensions." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://myneurotest.com/" />
-    <meta property="og:site_name" content="MyNeuroTest" />
-    <meta property="og:title" content="MyNeuroTest — Discover Your Neurodivergent Profile | Free Assessment" />
-    <meta property="og:description" content="Take our free evidence-informed assessment and unlock a detailed cognitive profile. Understand your unique mind across autism, ADHD, sensory processing, and more." />
-    <meta property="og:image" content="https://files.manuscdn.com/webdev_screenshots/2026/03/13/ctP724Pu2j8MnR9hCSVETe.png?x-oss-process=image/resize,w_1200/crop,h_630,x_0,y_0" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="MyNeuroTest — Discover Your Neurodivergent Profile" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@MyNeuroTest" />
-    <meta name="twitter:title" content="MyNeuroTest — Discover Your Neurodivergent Profile | Free Assessment" />
-    <meta name="twitter:description" content="Take our free evidence-informed assessment and unlock a detailed cognitive profile. Understand your unique mind across autism, ADHD, sensory processing, and more." />
-    <meta name="twitter:image" content="https://files.manuscdn.com/webdev_screenshots/2026/03/13/ctP724Pu2j8MnR9hCSVETe.png?x-oss-process=image/resize,w_1200/crop,h_630,x_0,y_0" />
-    <meta name="twitter:image:alt" content="MyNeuroTest — Discover Your Neurodivergent Profile" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#6d28d9" />
-
-    <!-- Fonts -->
+    <meta property="og:url" content="https://myneurotest.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-    <!-- App -->
-    <script type="module" crossorigin src="assets/index-DgIran-g.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-rNMRsn1Z.css" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://myneurotest.com/#website",
-          "url": "https://myneurotest.com/",
-          "name": "MyNeuroTest",
-          "description": "Free evidence-informed neurodivergent cognitive profile assessment",
-          "inLanguage": "en-US"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://myneurotest.com/#webpage",
-          "url": "https://myneurotest.com/",
-          "name": "MyNeuroTest — Discover Your Neurodivergent Profile | Free Assessment",
-          "description": "Take our free evidence-informed assessment and unlock a detailed cognitive profile. Understand your unique mind across autism, ADHD, sensory processing, and more.",
-          "isPartOf": { "@id": "https://myneurotest.com/#website" },
-          "inLanguage": "en-US",
-          "potentialAction": {
-            "@type": "ReadAction",
-            "target": ["https://myneurotest.com/"]
-          }
-        },
-        {
-          "@type": "Quiz",
-          "@id": "https://myneurotest.com/#quiz",
-          "name": "MyNeuroTest Neurodivergent Profile Assessment",
-          "description": "A free, evidence-informed assessment that generates a personalized neurodivergent cognitive profile covering ADHD, autism, sensory processing, social communication, and more.",
-          "url": "https://myneurotest.com/",
-          "provider": {
-            "@type": "Organization",
-            "name": "MyNeuroTest",
-            "url": "https://myneurotest.com/"
-          },
-          "educationalLevel": "general public",
-          "isAccessibleForFree": true,
-          "timeRequired": "PT20M",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Adults seeking self-understanding of neurodivergent traits"
-          }
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://myneurotest.com/#organization",
-          "name": "MyNeuroTest",
-          "url": "https://myneurotest.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://myneurotest.com/favicon-192x192.png"
-          },
-          "sameAs": []
-        }
-      ]
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Nunito:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="module" crossorigin src="/assets/index-BK0sppO1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-rNMRsn1Z.css">
   </head>
-<body>
-    
-
+  <body>
     <div id="root"></div>
   </body>
-
 </html>
-
