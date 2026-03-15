@@ -14,6 +14,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Nunito:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script>
+      // GitHub Pages SPA redirect: restore path from ?p= param
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+        // Also handle ?p= encoding from 404.html
+        var search = location.search;
+        if (search.indexOf('?p=') === 0 || search.indexOf('&p=') !== -1) {
+          var params = new URLSearchParams(search.slice(1));
+          var p = params.get('p');
+          if (p) {
+            var decoded = decodeURIComponent(p);
+            var idx = decoded.indexOf('?');
+            var path = idx === -1 ? decoded : decoded.slice(0, idx);
+            var qs = idx === -1 ? '' : decoded.slice(idx);
+            history.replaceState(null, null, '/' + path + qs + location.hash);
+          }
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/assets/index-PwR1aWr6.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-rNMRsn1Z.css">
   </head>
