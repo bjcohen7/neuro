@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <script>
-    // GitHub Pages SPA redirect for custom domains (no subdirectory prefix)
-    // Redirects /any/path to /?p=any%2Fpath so index.html can restore the route
+    // GitHub Pages SPA redirect trick
+    // Encode the path and query into the hash, then redirect to index.html
     var l = window.location;
-    var path = l.pathname.slice(1); // strip leading slash
-    if (path) {
-      l.replace(
-        l.protocol + '//' + l.host + '/?p=' + encodeURIComponent(path + l.search) + (l.hash || '')
-      );
-    }
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1).join('/') +
+      '/?p=' + encodeURIComponent(l.pathname.slice(1) + l.search) +
+      (l.hash || '')
+    );
   </script>
 </head>
 <body></body>
