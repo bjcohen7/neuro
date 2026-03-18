@@ -12,10 +12,12 @@
     <meta property="og:url" content="https://myneurotest.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Nunito:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap&display=swap" rel="stylesheet" />
+    <!-- Load fonts asynchronously to avoid render blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Nunito:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Nunito:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" /></noscript>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- Preload hero brain image for faster LCP -->
-    <link rel="preload" href="/brain.jpg" as="image" />
+    <link rel="preload" href="/brain.webp" as="image" type="image/webp" />
     <!-- Meta Pixel Code: deferred after load to avoid blocking render -->
     <script>
       window.addEventListener('load', function() {
@@ -55,7 +57,7 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-DQUX-0u6.js"></script>
+    <script type="module" crossorigin src="/assets/index-DLFOnBrk.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-router-BfKDwNsM.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-CIgrcPQw.js">
     <link rel="stylesheet" crossorigin href="/assets/index-Dcjyz5xp.css">
