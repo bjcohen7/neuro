@@ -4,11 +4,10 @@
   <meta charset="utf-8">
   <script>
     // GitHub Pages SPA redirect trick
-    // Encode the path and query into the hash, then redirect to index.html
+    // Preserve the full path (e.g. /report/TOKEN) and redirect to index.html with ?p= encoding
     var l = window.location;
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1).join('/') +
       '/?p=' + encodeURIComponent(l.pathname.slice(1) + l.search) +
       (l.hash || '')
     );
