@@ -296,23 +296,7 @@ const CSS=`
 .dd-proc-pct{font-size:12px;color:#aaa;}
 /* Paywall */
 .dd-paywall{max-width:560px;margin:0 auto;padding:48px 24px 80px;}
-.dd-pw-badge{display:inline-flex;align-items:center;gap:6px;background:#eeeaff;border:1px solid #c4bff7;border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700;color:#5b52e8;letter-spacing:0.5px;margin-bottom:20px;}
-.dd-pw-title{font-size:30px;font-weight:800;color:#1a1a2e;line-height:1.2;margin-bottom:8px;font-family:'Fraunces',Georgia,serif;}
-.dd-pw-sub{font-size:15px;color:#666;line-height:1.7;margin-bottom:28px;}
-.dd-pw-card{background:#fff;border:1px solid #e8e5df;border-radius:20px;padding:28px;margin-bottom:24px;box-shadow:0 2px 16px rgba(0,0,0,0.06);}
-.dd-pw-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:20px;}
-.dd-pw-price{font-size:42px;font-weight:800;color:#1a1a2e;}
-.dd-pw-price-sub{font-size:14px;color:#999;}
-.dd-pw-items{display:grid;gap:12px;margin-bottom:24px;}
-.dd-pw-item{display:flex;align-items:flex-start;gap:12px;}
-.dd-pw-item-icon{font-size:18px;flex-shrink:0;margin-top:1px;}
-.dd-pw-item-text strong{display:block;font-size:14px;font-weight:700;color:#1a1a2e;margin-bottom:2px;}
-.dd-pw-item-text span{font-size:13px;color:#777;}
-.dd-btn-buy{width:100%;background:linear-gradient(135deg,#5b52e8,#7c6ff7);color:#fff;padding:16px 24px;border-radius:14px;font-size:16px;font-weight:800;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(91,82,232,0.35);font-family:inherit;transition:all 0.2s;}
-.dd-btn-buy:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(91,82,232,0.45);}
-.dd-btn-buy:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
-.dd-pw-trust{display:flex;justify-content:center;gap:20px;margin-top:16px;flex-wrap:wrap;}
-.dd-pw-trust-item{font-size:12px;color:#aaa;display:flex;align-items:center;gap:4px;}
+.dd-pw-section-label{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5b52e8;margin-bottom:20px;text-align:center;}.dd-pw-title{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.8rem,5vw,2.3rem);font-weight:800;color:#1a1a2e;line-height:1.15;margin-bottom:40px;text-align:center;}.dd-pw-items{background:#fff;border:1px solid #e8e5df;border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.05);margin-bottom:32px;}.dd-pw-item{display:flex;align-items:center;gap:16px;padding:20px 24px;border-bottom:1px solid #f0ede8;}.dd-pw-item:last-child{border-bottom:none;}.dd-pw-item-dot{width:8px;height:8px;border-radius:50%;background:#5b52e8;flex-shrink:0;}.dd-pw-item-title{font-size:15px;font-weight:600;color:#1a1a2e;}.dd-pw-price-row{display:flex;align-items:baseline;justify-content:center;gap:8px;margin-bottom:20px;}.dd-pw-price{font-family:'Fraunces',Georgia,serif;font-size:36px;font-weight:800;color:#1a1a2e;}.dd-pw-price-sub{font-size:13px;color:#aaa;}.dd-btn-buy{width:100%;background:linear-gradient(135deg,#5b52e8,#7c6ff7);color:#fff;padding:18px 24px;border-radius:12px;font-size:16px;font-weight:700;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(91,82,232,0.3);font-family:inherit;transition:all 0.2s;margin-bottom:16px;}.dd-btn-buy:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(91,82,232,0.45);}.dd-btn-buy:disabled{opacity:0.5;cursor:not-allowed;transform:none;}.dd-pw-trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}.dd-pw-trust-item{font-size:12px;color:#bbb;}
 /* Success */
 .dd-success{text-align:center;padding:80px 24px;max-width:480px;margin:0 auto;}
 .dd-success-icon{font-size:64px;margin-bottom:24px;}
@@ -667,35 +651,27 @@ function DeepDivePage(){
         e.jsxDEV("span",{className:"dd-nav-section",children:"Deep Dive Assessment"},void 0,false)
       ]},void 0,true),
       e.jsxDEV("div",{className:"dd-paywall",children:[
-        e.jsxDEV("div",{className:"dd-pw-badge",children:"✦ Assessment Complete"},void 0,false),
-        e.jsxDEV("h1",{className:"dd-pw-title",children:"What is your actual IQ?"},void 0,false),
-        e.jsxDEV("p",{className:"dd-pw-sub",children:"Your cognitive battery results are ready. Get your estimated IQ range, 12-factor cognitive profile, and a personalized report explaining exactly how your brain works."},void 0,false),
-        e.jsxDEV("div",{className:"dd-pw-card",children:[
-          e.jsxDEV("div",{className:"dd-pw-price-row",children:[
-            e.jsxDEV("div",{className:"dd-pw-price",children:"$9.99"},void 0,false),
-            e.jsxDEV("div",{className:"dd-pw-price-sub",children:"one-time · delivered to your email"},void 0,false)
+        e.jsxDEV("div",{className:"dd-pw-section-label",children:"Your results are ready"},void 0,false),
+        e.jsxDEV("h1",{className:"dd-pw-title",children:"Your IQ score and full cognitive report are ready."},void 0,false),
+        e.jsxDEV("div",{className:"dd-pw-items",children:[
+          e.jsxDEV("div",{className:"dd-pw-item",children:[
+            e.jsxDEV("div",{className:"dd-pw-item-dot"},void 0,false),
+            e.jsxDEV("div",{className:"dd-pw-item-title",children:"Estimated IQ"},void 0,false)
           ]},void 0,true),
-          e.jsxDEV("div",{className:"dd-pw-items",children:[
-            {icon:"🎯",title:"Estimated IQ Range",desc:"Your cognitive ability score contextualized against population norms"},
-            {icon:"🧩",title:"12-Factor Cognitive Profile",desc:"Fluid reasoning, working memory, processing speed, and more"},
-            {icon:"🔬",title:"Strengths & Blind Spots",desc:"Where your profile excels and where to compensate"},
-            {icon:"🪞",title:"Self-Perception Analysis",desc:"How your self-assessment compares to your actual battery results"},
-            {icon:"📋",title:"Personalized Action Plan",desc:"Strategies tailored to your exact cognitive fingerprint"}
-          ].map((item,i)=>
-            e.jsxDEV("div",{className:"dd-pw-item",children:[
-              e.jsxDEV("div",{className:"dd-pw-item-icon",children:item.icon},void 0,false),
-              e.jsxDEV("div",{className:"dd-pw-item-text",children:[
-                e.jsxDEV("strong",{children:item.title},void 0,false),
-                e.jsxDEV("span",{children:item.desc},void 0,false)
-              ]},void 0,true)
-            ]},i,true)
-          )},void 0,false),
-          e.jsxDEV("button",{className:"dd-btn-buy",onClick:handleBuy,disabled:loading,children:loading?"Processing...":"Get My IQ Score & Report →"},void 0,false),
-          e.jsxDEV("div",{className:"dd-pw-trust",children:[
-            e.jsxDEV("span",{className:"dd-pw-trust-item",children:"🔒 Secure checkout"},void 0,false),
-            e.jsxDEV("span",{className:"dd-pw-trust-item",children:"📧 Delivered by email"},void 0,false),
-            e.jsxDEV("span",{className:"dd-pw-trust-item",children:"⚡ Within 24 hours"},void 0,false)
+          e.jsxDEV("div",{className:"dd-pw-item",children:[
+            e.jsxDEV("div",{className:"dd-pw-item-dot"},void 0,false),
+            e.jsxDEV("div",{className:"dd-pw-item-title",children:"Full Cognitive Report"},void 0,false)
           ]},void 0,true)
+        ]},void 0,true),
+        e.jsxDEV("div",{className:"dd-pw-price-row",children:[
+          e.jsxDEV("div",{className:"dd-pw-price",children:"$9.99"},void 0,false),
+          e.jsxDEV("div",{className:"dd-pw-price-sub",children:"one-time · delivered to your email"},void 0,false)
+        ]},void 0,true),
+        e.jsxDEV("button",{className:"dd-btn-buy",onClick:handleBuy,disabled:loading,children:loading?"Processing...":"Unlock My IQ Score & Report"},void 0,false),
+        e.jsxDEV("div",{className:"dd-pw-trust",children:[
+          e.jsxDEV("span",{className:"dd-pw-trust-item",children:"Secure checkout"},void 0,false),
+          e.jsxDEV("span",{className:"dd-pw-trust-item",children:"Delivered by email"},void 0,false),
+          e.jsxDEV("span",{className:"dd-pw-trust-item",children:"One-time charge"},void 0,false)
         ]},void 0,true)
       ]},void 0,true)
     ]},void 0,true);
