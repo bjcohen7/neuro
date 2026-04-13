@@ -229,7 +229,7 @@ const CSS=`
 
 
 
-.dd-main{max-width:680px;margin:0 auto;padding:48px 24px 80px;}
+.dd-main{max-width:680px;margin:0 auto;padding:16px 16px 60px;}
 .dd-sec-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#5b52e8;margin-bottom:10px;}
 .dd-sec-title{font-size:26px;font-weight:800;color:#1a1a2e;line-height:1.2;margin-bottom:8px;}
 .dd-sec-desc{font-size:15px;color:#666;line-height:1.7;margin-bottom:36px;}
@@ -277,9 +277,9 @@ const CSS=`
 .dd-sym-expr{background:#eeeaff;border:1.5px solid #c4bff7;border-radius:12px;padding:16px 20px;font-size:22px;font-weight:800;color:#5b52e8;margin-bottom:20px;letter-spacing:4px;}
 .dd-tri-svg{background:#f4f2ee;border:1.5px solid #e0ddd6;border-radius:14px;padding:28px;margin-bottom:20px;display:flex;align-items:center;justify-content:center;}
 /* Intro */
-.dd-intro{text-align:center;padding:60px 24px;max-width:560px;margin:0 auto;}
+.dd-intro{text-align:center;padding:24px 20px 16px;max-width:560px;margin:0 auto;}
 .dd-intro-icon{font-size:56px;margin-bottom:24px;}
-.dd-intro-title{font-size:32px;font-weight:800;color:#1a1a2e;margin-bottom:14px;font-family:'Fraunces',Georgia,serif;}
+.dd-intro-title{font-size:32px;font-weight:800;color:#1a1a2e;margin-bottom:10px;font-family:'Fraunces',Georgia,serif;}
 .dd-intro-body{font-size:16px;color:#666;line-height:1.8;margin-bottom:32px;}
 .dd-intro-stats{display:flex;justify-content:center;gap:32px;margin-bottom:36px;}
 .dd-stat-num{font-size:28px;font-weight:800;color:#5b52e8;}
@@ -295,7 +295,7 @@ const CSS=`
 .dd-proc-bar-fill{height:6px;background:linear-gradient(90deg,#5b52e8,#7c6ff7);border-radius:3px;transition:width 0.8s ease;}
 .dd-proc-pct{font-size:12px;color:#aaa;}
 /* Paywall */
-.dd-paywall{max-width:560px;margin:0 auto;padding:48px 24px 80px;}
+.dd-paywall{max-width:560px;margin:0 auto;padding:24px 20px 60px;}
 .dd-pw-section-label{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5b52e8;margin-bottom:20px;text-align:center;}.dd-pw-title{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.8rem,5vw,2.3rem);font-weight:800;color:#1a1a2e;line-height:1.15;margin-bottom:40px;text-align:center;}.dd-pw-items{background:#fff;border:1px solid #e8e5df;border-radius:16px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.05);margin-bottom:32px;}.dd-pw-item{display:flex;align-items:center;gap:16px;padding:20px 24px;border-bottom:1px solid #f0ede8;}.dd-pw-item:last-child{border-bottom:none;}.dd-pw-item-dot{width:8px;height:8px;border-radius:50%;background:#5b52e8;flex-shrink:0;}.dd-pw-item-title{font-size:15px;font-weight:600;color:#1a1a2e;}.dd-pw-price-row{display:flex;align-items:baseline;justify-content:center;gap:8px;margin-bottom:20px;}.dd-pw-price{font-family:'Fraunces',Georgia,serif;font-size:36px;font-weight:800;color:#1a1a2e;}.dd-pw-price-sub{font-size:13px;color:#aaa;}.dd-btn-buy{width:100%;background:linear-gradient(135deg,#5b52e8,#7c6ff7);color:#fff;padding:18px 24px;border-radius:12px;font-size:16px;font-weight:700;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(91,82,232,0.3);font-family:inherit;transition:all 0.2s;margin-bottom:16px;}.dd-btn-buy:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(91,82,232,0.45);}.dd-btn-buy:disabled{opacity:0.5;cursor:not-allowed;transform:none;}.dd-pw-trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}.dd-pw-trust-item{font-size:12px;color:#bbb;}
 /* Success */
 .dd-success{text-align:center;padding:80px 24px;max-width:480px;margin:0 auto;}
@@ -311,8 +311,8 @@ const CSS=`
   .dd-wrap{font-size:110%;}
   .dd-nav{padding:14px 16px;}
   .dd-progress{padding:12px 16px;}
-  .dd-main{padding:32px 16px 60px;}
-  .dd-paywall{padding:32px 16px 60px;}
+  .dd-main{padding:12px 14px 48px;}
+  .dd-paywall{padding:20px 16px 48px;}
   .dd-opts.g2,.dd-opts.g4{grid-template-columns:1fr;}
   .dd-popts{grid-template-columns:repeat(2,1fr);}
   .dd-intro-stats{gap:20px;}
@@ -593,7 +593,7 @@ function DeepDivePage(){
       ]},void 0,true),
       e.jsxDEV("div",{className:"dd-main",children:
         e.jsxDEV("div",{className:"dd-intro",children:[
-          e.jsxDEV("div",{className:"dd-intro-icon",children:"🧠"},void 0,false),
+          
           e.jsxDEV("h1",{className:"dd-intro-title",children:"IQ Score & Cognitive Deep Dive"},void 0,false),
           e.jsxDEV("p",{className:"dd-intro-body",children:"A 28-question assessment that measures your fluid reasoning, working memory, processing speed, and 9 other cognitive factors — then delivers your estimated IQ range and a personalized cognitive profile."},void 0,false),
           e.jsxDEV("div",{className:"dd-intro-stats",children:[
@@ -736,16 +736,8 @@ function DeepDivePage(){
       },void 0,false)
     ]},void 0,true),
     e.jsxDEV("div",{className:"dd-main",children:[
-      sectionChanged&&e.jsxDEV(b.Fragment,{children:[
-        e.jsxDEV("div",{className:"dd-sec-eyebrow",children:currentSection?.eyebrow},void 0,false),
-        e.jsxDEV("div",{className:"dd-sec-title",children:currentSection?.title},void 0,false),
-        e.jsxDEV("div",{className:"dd-sec-desc",children:currentSection?.desc},void 0,false)
-      ]},void 0,true),
-      qIndex===0&&e.jsxDEV(b.Fragment,{children:[
-        e.jsxDEV("div",{className:"dd-sec-eyebrow",children:currentSection?.eyebrow},void 0,false),
-        e.jsxDEV("div",{className:"dd-sec-title",children:currentSection?.title},void 0,false),
-        e.jsxDEV("div",{className:"dd-sec-desc",children:currentSection?.desc},void 0,false)
-      ]},void 0,true),
+      
+      
       e.jsxDEV("div",{className:"dd-card",children:[
         e.jsxDEV("div",{className:"dd-qnum",children:`Question ${qIndex+1} of ${TOTAL}`},void 0,false),
         e.jsxDEV("div",{className:"dd-qtext",children:currentQ.text},void 0,false),
