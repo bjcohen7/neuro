@@ -225,10 +225,10 @@ const CSS=`
 .dd-progress-count{font-size:12px;font-weight:700;color:#5b52e8;}
 .dd-bar-bg{height:5px;background:#e8e5df;border-radius:3px;}
 .dd-bar-fill{height:5px;background:linear-gradient(90deg,#5b52e8,#7c6ff7);border-radius:3px;transition:width 0.4s ease;}
-.dd-tabs{display:flex;gap:6px;margin-top:12px;}
-.dd-tab{flex:1;height:3px;border-radius:2px;background:#e8e5df;}
-.dd-tab.done{background:#5b52e8;}
-.dd-tab.active{background:linear-gradient(90deg,#5b52e8,#7c6ff7);}
+
+
+
+
 .dd-main{max-width:680px;margin:0 auto;padding:48px 24px 80px;}
 .dd-sec-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#5b52e8;margin-bottom:10px;}
 .dd-sec-title{font-size:26px;font-weight:800;color:#1a1a2e;line-height:1.2;margin-bottom:8px;}
