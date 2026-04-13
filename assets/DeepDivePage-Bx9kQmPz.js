@@ -219,12 +219,12 @@ const CSS=`
 .dd-nav-logo{color:#1a1a2e;font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;text-decoration:none;}
 .dd-nav-badge{background:#5b52e8;border-radius:8px;padding:4px 8px;font-size:12px;color:#fff;}
 .dd-nav-section{font-size:12px;color:#888;letter-spacing:1px;text-transform:uppercase;}
-.dd-progress{background:#fff;border-bottom:1px solid #e8e5df;padding:10px 16px;}
-.dd-progress-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.dd-progress{background:#fff;border-bottom:1px solid #e8e5df;padding:6px 14px;}
+.dd-progress-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;}
 .dd-progress-label{font-size:12px;color:#888;}
 .dd-progress-count{font-size:12px;font-weight:700;color:#5b52e8;}
-.dd-bar-bg{height:5px;background:#e8e5df;border-radius:3px;}
-.dd-bar-fill{height:5px;background:linear-gradient(90deg,#5b52e8,#7c6ff7);border-radius:3px;transition:width 0.4s ease;}
+.dd-bar-bg{height:3px;background:#e8e5df;border-radius:2px;}
+.dd-bar-fill{height:3px;background:linear-gradient(90deg,#5b52e8,#7c6ff7);border-radius:2px;transition:width 0.4s ease;}
 
 
 
@@ -310,7 +310,7 @@ const CSS=`
 .dd-btn-row{display:flex;justify-content:flex-end;gap:12px;margin-top:8px;}.dd-sticky-next{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e8e5df;padding:12px 16px;z-index:100;box-shadow:0 -4px 16px rgba(0,0,0,0.08);}.dd-sticky-next .dd-btn-next{width:100%;padding:16px;font-size:16px;border-radius:12px;}@media(max-width:600px){
   .dd-wrap{font-size:110%;}
   .dd-nav{padding:14px 16px;}
-  .dd-progress{padding:12px 16px;}
+  .dd-progress{padding:5px 12px;}
   .dd-main{padding:6px 12px 80px;}
   .dd-paywall{padding:20px 16px 48px;}
   .dd-opts.g2,.dd-opts.g4{grid-template-columns:1fr;}
