@@ -757,12 +757,7 @@ function DeepDivePage(){
       ]},void 0,true),
       e.jsxDEV("div",{className:"dd-bar-bg",children:
         e.jsxDEV("div",{className:"dd-bar-fill",style:{width:progress+"%"}},void 0,false)
-      },void 0,false),
-      e.jsxDEV("div",{className:"dd-tabs",children:SECTIONS.map((s,i)=>{
-        const done=i<sectionIndex;
-        const active=i===sectionIndex;
-        return e.jsxDEV("div",{className:"dd-tab"+(done?" done":active?" active":""),title:s.title},i,false);
-      })},void 0,false)
+      },void 0,false)
     ]},void 0,true),
     e.jsxDEV("div",{className:"dd-main",children:[
       sectionChanged&&e.jsxDEV(b.Fragment,{children:[
