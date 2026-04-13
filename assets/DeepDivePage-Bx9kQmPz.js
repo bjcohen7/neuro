@@ -324,6 +324,7 @@ const CSS=`
 .dd-success-item{display:flex;align-items:center;gap:10px;font-size:14px;color:#444;}
 .dd-success-item-icon{font-size:16px;}
 @media(max-width:600px){
+  .dd-wrap{font-size:110%;}
   .dd-nav{padding:14px 16px;}
   .dd-progress{padding:12px 16px;}
   .dd-main{padding:32px 16px 60px;}
@@ -331,6 +332,13 @@ const CSS=`
   .dd-opts.g2,.dd-opts.g4{grid-template-columns:1fr;}
   .dd-popts{grid-template-columns:repeat(2,1fr);}
   .dd-intro-stats{gap:20px;}
+  .dd-qtext{font-size:18px;}
+  .dd-opt-lbl{font-size:16px;}
+  .dd-scale-num{font-size:18px;}
+  .dd-scale-btn{padding:16px 6px;}
+  .dd-btn-next,.dd-btn-back{padding:14px 20px;font-size:16px;}
+  .dd-btn-start,.dd-btn-buy{font-size:17px;padding:18px 32px;}
+  .dd-card{padding:24px 20px;}
 }
 `;
 
